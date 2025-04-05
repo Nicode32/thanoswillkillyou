@@ -7,7 +7,7 @@ sleep 1
 echo "choose the correct number (0-9) "
 read number 
 choice=$(($RANDOM%10))
-if [[number == choice]]
+if [[$number == $choice]]; then 
      echo "you save the world"
 else 
      echo "ooo no you lost half of population is destroyed"
